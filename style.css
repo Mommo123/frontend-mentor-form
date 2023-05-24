@@ -1,0 +1,152 @@
+:root {
+    --color-primary-700: hsl(0, 100%, 74%);
+    --color-primary-500: hsl(154, 59%, 51%);
+
+    --color-accent-blue: hsl(248, 32%, 49%);
+
+    --color-neutral-200: hsl(249, 10%, 26%);
+    --color-neutral-700: hsl(246, 25%, 77%);
+
+    --font-size: 16px;
+
+    --ff-primary: 'Poppins';
+    
+}
+
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    gap: 1.5rem;
+    background-attachment: fixed;
+    margin-inline: 1.5rem;
+    margin-block: 3rem;
+    background-color: var(--color-primary-700);
+    overflow-inline: hidden;
+    max-width: 100%;
+}
+
+#header {
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.header-primary {
+    margin-inline: 3rem;
+}
+
+.header__paragraph {
+    text-align: center;
+}
+
+.header__offer {
+    margin-top: 4rem;
+    background-color:hsl(248, 32%, 49%);
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#form {
+  background-color: white;
+  display: grid;
+  border-radius: 1rem;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.form__box {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-inline: 1.5rem;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+#form__fname {
+    margin-top: 1.5rem;
+    
+    
+}
+
+
+
+
+.hidden__error {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    padding-right: 1.7rem !important;
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    float: left;
+    visibility: hidden;
+    color:hsl(0, 100%, 74%);
+}
+
+#btn {
+    background-color:hsl(154, 59%, 51%);
+    color: rgba(255, 253, 253, 0.85);
+    border-style: none;
+    box-shadow: 0px 3px hsl(154, 55%, 46%);
+}
+
+
+
+#btn:active {
+    background-color: hsl(154, 84%, 60%);
+    
+}
+
+.terms__services {
+    font-family: 'Poppins';
+    font-size: 0.7rem;
+    margin-inline: 3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.terms__services__span {
+    color:hsl(0, 53%, 60%);
+    font-weight: bold;
+}
+
+
+
+@media (min-width: 750px) {
+    body{
+      grid-template-columns: 1fr 1fr;
+      background-image: url(images/bg-intro-desktop.png);
+      
+      
+    }
+
+    #header {
+        margin-top: 25%;
+        padding-inline: 2rem;
+    }
+   
+    html {
+        zoom: .8;
+        overflow: hidden;
+    }
+   
+}
+
+@media(max-width: 370px) {
+    body {
+        margin: 0 auto;
+    }
+}
